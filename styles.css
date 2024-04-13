@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('./pexels-mikhail-nilov-6893329.jpg'); /* Path to your image */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Container styles */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(206, 200, 200, 0.8); /* Adjust the opacity as needed */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    text-align: center;
+    color: rgba(36, 33, 21, 0.555)
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap; 
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="datetime-local"],
+select {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#taskList {
+    margin-top: 20px;
+}
+
+#description,
+#category,
+#tags {
+    flex-basis: 100%;
+}
+
+#filterPriority,
+#filterStatus,
+#filterCategory {
+    margin-right: 10px;
+}

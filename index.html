@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Schedule Management System</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-image">
+    </div>
+
+    <div class="container">
+        <h2>Schedule Management System</h2>
+        
+        <form id="taskForm">
+            <input type="text" id="taskName" placeholder="Task Name" required>
+            <input type="datetime-local" id="deadline" required>
+            <input type="text" id="description" placeholder="Description">
+            <input type="text" id="category" placeholder="Category">
+            <input type="text" id="tags" placeholder="Tags">
+            <select id="priority" required>
+                <option value="" disabled selected hidden>Priority</option>
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+            <button type="submit">Add Task</button>
+        </form>
+
+        <div id="taskList">
+        </div>
+        <select id="filterStatus">
+            <option value="all">All Statuses</option>
+            <option value="completed">Completed</option>
+            <option value="incomplete">Incomplete</option>
+        </select>
+        <button class="emailBtn" onclick="shareTaskViaEmail('Task Name', 'Deadline', 'Priority', 'Description')">Email</button>
+    </div>
+</body>
+</html>
